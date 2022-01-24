@@ -1,7 +1,8 @@
 import 'styles/globals.css';
+import MainCard from 'shared/MainCard';
 
 const App = () => {
-  return <div className='text-green-500'>Hoja de Vida</div>;
+  return <MainCard />;
 };
 
 export default App;
