@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---- Paleta de colores personalizados ---- */
+
+.bg-cultured {
+  background-color: #eef0f2;
+}
+
+.txt-cultured {
+    color: #eef0f2;
+}
+
+.bg-silver {
+  background-color: #c6c7c4;
+}
+
+.bg-spanish-gray {
+  background-color: #a2999e;
+}
+
+.bg-deep-taupe {
+  background-color: #846a6a;
+}
+
+.bg-onyx {
+  background-color: #353b3c;
+}
+
+/* ---- Fin paleta de colores personalizados ---- */
+
+/* ---- Tipografía y fuentes ---- */
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url('/src/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url('/src/fonts/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url('/src/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: poppins-italic;
+  src: url('/src/fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+.txt-titulo-principal {
+  font-family: poppins-semibold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.txt-titulo-secundario {
+  font-family: poppins-medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.txt-subtitulo {
+  font-family: poppins-medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.txt-principal {
+  font-family: poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.txt-movil {
+  font-family: poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.txt-cursiva {
+  font-family: poppins-italic;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* ---- Fin tipografía y fuentes ---- */
