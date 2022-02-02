@@ -1,21 +1,14 @@
 import React from 'react';
 import BtnCertificado from 'shared/BtnCertificado';
 
-const MainCard = () => {
-  return (
-    <div className='bg-silver rounded-xl flex flex-col'>
-      <span className='txt-titulo-secundario text-center'>Aspecto 1</span>
-      <p className='p-6 text-center'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia unde
-        ut quo fugit molestiae quam, magni nihil. Alias vero officiis
-        laboriosam. Unde ex officiis mollitia repudiandae debitis minus
-        temporibus sapiente.
-      </p>
-      <div className='text-center p-4 '>
-        <BtnCertificado />
-      </div>
+const MainCard = ({ titulo, descripcion, enlace }) => (
+  <div className='bg-cultured sombra-card rounded-xl flex flex-col m-3 h-full'>
+    <span className='txt-titulo-secundario text-center'>{titulo}</span>
+    <p className='p-6 text-center txt-principal'>{descripcion}</p>
+    <div className='text-center p-4 '>
+      <BtnCertificado enlace={enlace} />
     </div>
-  );
-};
+  </div>
+);
 
 export default MainCard;
