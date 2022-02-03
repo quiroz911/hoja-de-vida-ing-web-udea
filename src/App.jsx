@@ -1,6 +1,7 @@
 import 'styles/globals.css';
 import MainCard from 'shared/MainCard';
 import fotoHV from 'img/Foto-HV.jpg';
+import MainCardNoBtn from 'shared/MainCardNoBtn';
 
 const App = () => {
   const camposTarjetas = {
@@ -21,10 +22,23 @@ const App = () => {
       titulo: 'idiomas',
       descripcion: `Manejo y buenas habilidades comunicativas en los idiomas inglés y portugués, con un dominio de 80 % y 100 % respectivamente.`,
     },
+    cursos: {
+      titulo: 'Otros cursos',
+      descripcion: `Operating Systems and You: Becoming a Power User – Google (Coursera).
+      Chinese for Beginners – Universidad de Pekin (Coursera).
+      Administración de sistemas empresarial Linux Redhat – Redhat (Sapiencia Medellín).
+      Azure Fundamentals - AZ900`,
+    },
+    redes: {
+      titulo: 'Redes sociales',
+      descripcion: `Instagram: jpablo.quiroz - 
+      Linkedin: Juan Pablo Quiroz Piedrahita - 
+      Github: quiroz911`,
+    },
   };
   return (
     <div className='bg-spanish-gray p-3 h-screen '>
-      <div className='bg-white rounded-lg py-4 px-5 overflow-auto'>
+      <div className='bg-white rounded-lg py-4 px-5 h-full overflow-auto'>
         <div className='grid m-3 justify-items-center md:grid-cols-2'>
           <div>
             <img
@@ -40,16 +54,13 @@ const App = () => {
             <span className='text-center '>jpablo.quirozp@protonmail.com</span>
             <span className='text-center '>CC. 1234991656</span>
             <span className='text-center '>22 años</span>
-            <span className='text-center hidden md:contents md:mr-3'>
-              Calle 77sur # 43A-104
-            </span>
-            <span className='text-center hidden md:contents'>
-              - Sabaneta, Antioquia, Colombia.
+            <span className='text-center md:mr-3'>
+              Calle 77sur # 43A-104 - Sabaneta, Antioquia, Colombia.
             </span>
           </div>
         </div>
         <hr className='m-4 bg-deep-taupe h-1 rounded-xl' />
-        <div className='lg:flex lg:flex-row'>
+        <div className='md:flex md:flex-col lg:flex-row'>
           <div className='lg:basis-2/3'>
             <MainCard
               titulo={camposTarjetas.experiencia.titulo}
@@ -63,23 +74,23 @@ const App = () => {
             />
           </div>
         </div>
-        <div className='lg:flex lg:flex-row lg:mt-4'>
+        <div className='md:flex md:flex-col lg:flex-row lg:mt-4 '>
           <div className='lg:basis-1/3'>
             <MainCard
-              titulo={camposTarjetas.experiencia.titulo}
-              descripcion={camposTarjetas.experiencia.descripcion}
+              titulo={camposTarjetas.idiomas.titulo}
+              descripcion={camposTarjetas.idiomas.descripcion}
             />
           </div>
           <div className='lg:basis-1/3'>
             <MainCard
-              titulo={camposTarjetas.habilidades.titulo}
-              descripcion={camposTarjetas.habilidades.descripcion}
+              titulo={camposTarjetas.cursos.titulo}
+              descripcion={camposTarjetas.cursos.descripcion}
             />
           </div>
           <div className='lg:basis-1/3'>
-            <MainCard
-              titulo={camposTarjetas.habilidades.titulo}
-              descripcion={camposTarjetas.habilidades.descripcion}
+            <MainCardNoBtn
+              titulo={camposTarjetas.redes.titulo}
+              descripcion={camposTarjetas.redes.descripcion}
             />
           </div>
         </div>
